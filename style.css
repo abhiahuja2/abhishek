@@ -1,0 +1,393 @@
+/* Importing fonts from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Roboto+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.background-container {
+    background:
+        linear-gradient(rgb(73, 1, 92),
+            rgba(0, 53, 64, 0.803)),
+        url('images/backgroundImg.jpg');
+}
+
+
+/*-------------------------------- Top section of the page --------------------------------*/
+
+/* Navbar container */
+.navbar {
+    display: flex;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* margin-top: 24px; */
+    padding-top: 24px;
+}
+
+/* Navbar linked-text  */
+.navbar a {
+    text-decoration: none;
+}
+
+/* Logo NAMETBD */
+.left a {
+    letter-spacing: 8px;
+    margin-left: 130px;
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+}
+
+/* Navbar menu container */
+.right {
+    letter-spacing: 4px;
+    display: flex;
+    justify-content: flex-end;
+    margin: 5px 130px;
+    width: 100%;
+    font-weight: 700;
+    font-size: 12.5px;
+}
+
+/* Navbar menu linked-text */
+.right a {
+    padding-left: 60px;
+    color: rgba(255, 255, 255, 0.641);
+}
+
+/* On mouse effect of navbar menu */
+.right a:hover {
+    color: grey;
+}
+
+
+/*-------------------------------- Main section-1 of the page --------------------------------*/
+
+/* Summary of NAME TBD */
+.tagline {
+    color: white;
+    margin-top: 140px;
+    font-family: 'Inter', sans-serif;
+    line-height: 150px;
+    font-size: 50px;
+    text-align: center;
+}
+
+
+/*-------------------------------- Main section-2 of the page --------------------------------*/
+
+/* YOUR DATA, AI MODELS and EXAMPLE containers */
+.container {
+    width: 100%;
+    height: 820px;
+    display: flex;
+}
+
+/* YOUR DATA containers*/
+.leftSection {
+    margin-top: 8rem;
+    width: 15%;
+    margin-left: 80px;
+}
+
+.heading-YD {
+    font-size: 12.8px;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 3px;
+    font-weight: 700;
+    text-align: center;
+    color: rgba(100, 97, 136);
+}
+
+.slides-container {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin-right: 40%;
+}
+
+.slides {
+    background-color: brown;
+    width: 360%;
+    min-height: 200%;
+    position: absolute;
+    transform: scale(0.75) rotateY(-30deg) rotateX(45deg) translateZ(4.5rem);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    top: 95%;
+    transition: transform 200ms;
+    color: white;
+    font-size: 30px;
+
+}
+
+
+/* AI MODELS containers*/
+.mid {
+    width: 40%;
+}
+
+.midLogo {
+    margin-top: 8rem;
+    background-color: white;
+    border: 1px solid rgba(100, 97, 136);
+    width: 349px;
+    opacity: 0.5;
+    border-radius: 15px 15px 0 0;
+    height: 100px;
+    margin-left: 137px;
+    display: flex;
+}
+
+.midLogo img {
+    height: 80px;
+    margin: auto;
+}
+
+.midAI {
+    width: 410px;
+    height: 100px;
+    border: 1px solid rgba(100, 97, 136);
+    margin-left: 108px;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2px;
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.midscanner {
+    border: 1px solid rgba(100, 97, 136);
+    width: 349px;
+    opacity: 0.5;
+    border-radius: 0 0 15px 15px;
+    height: 256px;
+    margin-left: 137px;
+}
+
+.verticalLine {
+    border: 1px solid rgba(100, 97, 136);
+    height: 140px;
+    position: absolute;
+    left: 52%;
+}
+
+.rightSection {
+    margin-top: 8rem;
+    margin-bottom: 8px;
+    width: 30%;
+    display: inline-block;
+    justify-content: end;
+    font-weight: 700;
+}
+
+.rightSection p {
+    font-size: 12.8px;
+    color: grey;
+    margin-left: 40px;
+    letter-spacing: 3px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.content {
+    font-size: 14px;
+    border: 1px solid transparent;
+    border-radius: 26px;
+    background-color: rgba(255, 255, 255, 0.201);
+    color: white;
+    width: 66%;
+    font-family: 'Roboto Mono', monospace;
+    justify-items: space-between;
+    margin-top: 18px;
+    line-height: 22px;
+    padding: 18px;
+}
+
+.about {
+    height: 50%;
+}
+
+.abt-content {
+    padding-left: 12%;
+    padding-right: 10%;
+    padding-bottom: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(122, 120, 152);
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 40px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.border-container {
+    display: flex;
+    height: 35px;
+    margin-left: 24%;
+    margin-bottom: 40px;
+}
+
+.abt-coverLine-left {
+    width: 35px;
+    border: 1px solid rgb(122, 120, 152);
+    border-top: none;
+    border-right: none;
+}
+
+.abt-coverLine-right {
+    width: 35px;
+    border: 1px solid rgb(122, 120, 152);
+    margin-left: 65%;
+    border-top: none;
+    border-left: none;
+}
+
+/* Container needed to position the button. Adjust the width as needed */
+.media {
+    position: relative;
+    width: 80%;
+    margin-top: 150px;
+}
+
+/* Make the image responsive */
+.media img {
+    margin-left: 140px;
+    border: 1px solid rgb(122, 120, 152);
+    background-color: aqua;
+    opacity: 0.4;
+    border-radius: 10px;
+    width: 100%;
+}
+
+/* Style the button and place it in the middle of the container/image */
+.media .btn {
+    position: absolute;
+    top: 45%;
+    left: 60%;
+    color: rgba(255, 255, 255, 0.64);
+    background-color: transparent;
+    font-size: 5rem;
+    cursor: pointer;
+}
+
+.media .btn:hover {
+    /* background-color: black; */
+    transform: scale(1.5);
+}
+
+.heading-UC {
+    margin-top: 120px;
+    color: white;
+    margin-left: 9%;
+    font-size: 50px;
+    font-family: 'Inter', sans-serif;
+}
+
+.useCase-container {
+    color: white;
+    display: flex;
+}
+
+.left-usecase {
+    margin-left: 9%;
+}
+
+.svg-UC {
+    margin-top: 30px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.201);
+    opacity: 0.8;
+    padding: 20px;
+}
+
+.subheading-UC {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+}
+
+.summary-UC {
+    font-size: 20px;
+    color: gray;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-right: 150px;
+}
+
+
+.heading-uw {
+    margin-top: 10%;
+    margin-bottom: 30px;
+    font-weight: 700;
+    text-align: center;
+    color: rgba(100, 97, 136);
+    text-transform: uppercase;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.colab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.colab img {
+    width: 20%;
+    padding-right: 40px;
+    margin-bottom: 200px;
+}
+
+hr {
+    height: 1px;
+    background-color: rgba(100, 97, 136);
+    border: none;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 25px;
+}
+
+.left-footer li a {
+    letter-spacing: 8px;
+    padding-left: 130px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+}
+
+.left-footer li p {
+    padding-left: 130px;
+    padding-top: 10px;
+    color: rgba(100, 97, 136);
+    font-size: 17px;
+}
+
+.right-footer {
+    top: 10px;
+    margin-left: 40%;
+}
+
+.right-footer li {
+    list-style: none;
+    padding-top: 10px;
+}
+
+.right-footer li a {
+    color: rgba(100, 97, 136);
+    text-decoration: none;
+}
